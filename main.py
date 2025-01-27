@@ -36,8 +36,8 @@ def user_search(user_text: UserInput):
   length_of_x = len(x)
   if length_of_x == 0:
     return ExceptionErrors.no_occurences()
-  return json.dumps({"user_text": user_text,
+  return {"user_text": user_text,
                      "Occurences": length_of_x,
                      "Lookup_text": lookup_text,
-                     "Result": match,})
+                     "Result": len(match)}
 
