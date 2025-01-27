@@ -1,8 +1,7 @@
 class ExceptionErrors:
   def no_such_file():
-    pass
+    return "No such a file"
 
   def no_occurences():
-    pass
+    return "No occurences"
 
-  
