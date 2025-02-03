@@ -1,12 +1,12 @@
 import re
 
 
-def remove_non_ascii(text):
+def remove_non_ascii(text: str) -> str:
     return re.sub(r'[^\x00-\x7F]', '', text)
 
 
 class CleanText:
-  def __init__(self, text, new_text_file):
+  def __init__(self, text: str, new_text_file: str):
     self.text = text
     self.new_text_file = new_text_file
     self.new_text = None

@@ -3,7 +3,7 @@ from unittest.mock import patch
 import unittest
 
 
-def get_data_from_url(url, payload):
+def get_data_from_url(url: str, payload: dict):
   response = requests.post(url=url, json=payload)
   if response.status_code == 200:
     return response.json()
